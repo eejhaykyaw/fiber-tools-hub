@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fiber Tools Hub</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -20,11 +21,13 @@
       text-align: center;
       padding: 20px;
     }
+
     h1 {
       margin-bottom: 40px;
       font-size: 2rem;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
+
     .btn {
       display: block;
       width: 100%;
@@ -41,13 +44,24 @@
       transition: 0.2s;
       box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
     }
+
     .btn:hover {
       background: rgba(0,0,0,0.55);
       transform: scale(1.03);
     }
+
     .btn:active {
       transform: scale(0.97);
     }
+
+    /* LinkedIn badge wrapper */
+    .linkedin-badge {
+      margin-top: 30px;
+      margin-bottom: 90px; /* prevents footer overlap */
+      display: flex;
+      justify-content: center;
+    }
+
     footer {
       position: fixed;
       bottom: 0;
@@ -60,16 +74,43 @@
     }
   </style>
 </head>
+
 <body>
   <h1>📡 Fiber Tools Hub</h1>
 
-  <!-- Add your tools here -->
-  <a href="https://eejhaykyaw.github.io/Radius-fiber-mapping/" class="btn">🎨 Fiber Color Coding</a>
-  <a href="https://eejhaykyaw.github.io/Fiber-Fault-Locator/" class="btn">🔎 Fiber Fault Locator</a>
-  <a href="https://eejhaykyaw.github.io/FTTH-survey-app/" class="btn">📷 FTTH Survey App</a>
+  <a href="https://eejhaykyaw.github.io/Radius-fiber-mapping/" class="btn">
+    🎨 Fiber Color Coding
+  </a>
+
+  <a href="https://eejhaykyaw.github.io/Fiber-Fault-Locator/" class="btn">
+    🔎 Fiber Fault Locator
+  </a>
+
+  <a href="https://eejhaykyaw.github.io/FTTH-survey-app/" class="btn">
+    📷 FTTH Survey App
+  </a>
+
+  <!-- LinkedIn Profile Badge -->
+  <div class="linkedin-badge">
+    <div class="badge-base LI-profile-badge"
+         data-locale="en_US"
+         data-size="medium"
+         data-theme="dark"
+         data-type="VERTICAL"
+         data-vanity="erfe-jr-quiao"
+         data-version="v1">
+      <a class="badge-base__link LI-simple-link"
+         href="https://ph.linkedin.com/in/erfe-jr-quiao?trk=profile-badge">
+        Erfe Jr. Quiao
+      </a>
+    </div>
+  </div>
 
   <footer>
     <p>© 2025 Fiber Tools Hub | Built by Ej Quiao</p>
   </footer>
+
+  <!-- LinkedIn badge script (required) -->
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
